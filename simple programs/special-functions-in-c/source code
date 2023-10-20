@@ -1,0 +1,67 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+C#, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
+Code, Compile, Run and Debug online from anywhere in world.
+
+***.****************************************************************************/
+//FUNCTIONS
+//POWER FUNCTION 
+//pow() function finds x raised to the power of y i.e. xy. Basically in C exponent value is calculated using the pow() function
+#include <math.h>
+#include <stdio.h>
+
+int
+main ()
+{
+  double x = 6.1, y = 4.8;
+
+  // Storing the answer in result. 
+  double result = pow (x, y);
+  printf ("%.2lf", result);
+
+  return 0;
+}
+
+//tolower()
+#include <ctype.h> 
+#include <stdio.h> 
+  
+int main() 
+{ 
+    int j = 0; 
+    char str[] = "GEEKSFORGEEKS\n"; 
+  
+    // Character to be converted to lowercase 
+    char ch = 'G'; 
+  
+    // convert ch to lowercase using toLower() 
+    char ch; 
+  
+    while (str[j]) { 
+        ch = str[j]; 
+  
+        // convert ch to lowercase using toLower() 
+        putchar(tolower(ch)); 
+  
+        j++; 
+    } 
+  
+    return 0; 
+}
+//The time() function is defined in time.h (ctime in C++) header 
+//file. This function returns the time since 00:00:00 UTC, January 1
+//, 1970 (Unix timestamp) in seconds.
+#include <stdio.h> 
+#include <time.h> 
+  
+int main () 
+{ 
+    time_t seconds; 
+      
+    seconds = time(NULL); 
+    printf("Seconds since January 1, 1970 = %ld\n", seconds); 
+      
+    return(0); 
+} 
